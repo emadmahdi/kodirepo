@@ -6,15 +6,15 @@
 	<requires>
 		<!-- <import addon="xbmc.python" version="3.0.0" /> -->
 		<import addon="script.module.six" optional="false"/>
-		<import addon="script.module.requests" optional="false"/>
-		<import addon="script.module.chardet" optional="false"/>
 		<import addon="script.module.certifi" optional="false"/>
+		<import addon="script.module.chardet" optional="false"/>
 		<import addon="script.module.idna" optional="false"/>
 		<import addon="script.module.urllib3" optional="false"/>
+		<import addon="script.module.requests" optional="false"/>
 		<import addon="script.module.kodi-six" optional="false"/>
 		<import addon="script.module.addon.signals" optional="false"/>
-		<import addon="script.module.beautifulsoup4" optional="false"/>
 		<import addon="script.module.soupsieve" optional="false"/>
+		<import addon="script.module.beautifulsoup4" optional="false"/>
 		<import addon="script.module.pil" optional="false"/>
 		<import addon="script.module.yt-dlp" optional="false"/>
 		<import addon="script.module.resolveurl" optional="false"/>
@@ -1131,15 +1131,9 @@
     <requires>
         <!-- import addon="xbmc.python" version="3.0.1" / -->
     </requires>
-
-
-
     <extension point="xbmc.python.script" library="lib/yt_dlp/__init__.py">
         <provides>executable</provides>
     </extension>
-
-
-
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">A youtube-dl fork with additional features and patches</summary>
