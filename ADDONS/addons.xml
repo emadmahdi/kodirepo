@@ -2,7 +2,7 @@
 
 
 
-<addon id="plugin.video.arabicvideos" name="EMAD Arabic Videos" version="2024.05.26" provider-name="EMAD Software">
+<addon id="plugin.video.arabicvideos" name="EMAD Arabic Videos" version="2024.06.24" provider-name="EMAD Software">
 	<requires>
 		<!-- <import addon="xbmc.python" version="3.0.0" /> -->
 		<import addon="script.module.six" optional="false"/>
@@ -16,12 +16,12 @@
 		<import addon="script.module.soupsieve" optional="false"/>
 		<import addon="script.module.beautifulsoup4" optional="false"/>
 		<import addon="script.module.pil" optional="false"/>
-		<import addon="script.module.yt-dlp" optional="false"/>
-		<import addon="script.module.resolveurl" optional="false"/>
-		<!-- import addon="script.module.youtube.dl" optional="false"/ -->
-        <!-- <import addon="script.module.arabicvideos" optional="false"/> -->
+		<import addon="script.module.yt-dlp" optional="true"/>
+		<import addon="script.module.resolveurl" optional="true"/>
 		<import addon="inputstream.rtmp" optional="true"/>
 		<import addon="inputstream.adaptive" optional="true"/>
+		<!-- import addon="script.module.youtube.dl" optional="false"/ -->
+        <!-- <import addon="script.module.arabicvideos" optional="false"/> -->
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="arabicvideos\__init__.py">
 		<provides>video</provides>
@@ -1131,9 +1131,6 @@
     <requires>
         <!-- import addon="xbmc.python" version="3.0.1" / -->
     </requires>
-    <extension point="xbmc.python.script" library="lib/yt_dlp/__init__.py">
-        <provides>executable</provides>
-    </extension>
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">A youtube-dl fork with additional features and patches</summary>
